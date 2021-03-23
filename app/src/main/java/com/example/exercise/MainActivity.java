@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import java.util.Date;
+
 public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "com.example.exercise.MESSAGE";
 
@@ -22,6 +24,15 @@ public class MainActivity extends AppCompatActivity {
         EditText editText = (EditText) findViewById(R.id.editText);
         String message = editText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+    }
+
+    public void startSecond(View view) {
+        // 在布局xml中注册onclick事件触发
+        Intent intent = new Intent(this, SecondActivity.class);
+
+        String dateStr = new Date().toString();
+        intent.putExtra(EXTRA_MESSAGE, dateStr);
         startActivity(intent);
     }
 }
