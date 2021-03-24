@@ -3,4 +3,6 @@
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
     <string name="secondActivity_msg">Bonjour</string>
+    <string name="secondActivity_button">SecondAct</string>
+    <string name="button_browser">Open browser</string>
 </resources>
