@@ -5,4 +5,8 @@
     <string name="secondActivity_msg">Bonjour</string>
     <string name="secondActivity_button">SecondAct</string>
     <string name="button_browser">Open browser</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button_frags">Open third</string>
+    <string name="button_switch">Change Fragment</string>
 </resources>

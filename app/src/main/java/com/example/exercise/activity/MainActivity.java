@@ -1,4 +1,4 @@
-package com.example.exercise;
+package com.example.exercise.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+
+import com.example.exercise.R;
 
 import java.util.Date;
 

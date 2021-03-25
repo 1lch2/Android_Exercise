@@ -1,4 +1,4 @@
-package com.example.exercise;
+package com.example.exercise.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+
+import com.example.exercise.R;
 
 public class SecondActivity extends AppCompatActivity {
     public static final String TAG = "SecondActivity";
@@ -30,6 +32,11 @@ public class SecondActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_VIEW);
         Intent old_intent = getIntent();
         intent.setData(Uri.parse(old_intent.getStringExtra(MainActivity.EXTRA_URL)));
+        startActivity(intent);
+    }
+
+    public void openThird(View view) {
+        Intent intent = new Intent(this, ThirdActivity.class);
         startActivity(intent);
     }
 
