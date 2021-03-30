@@ -38,6 +38,7 @@ public class ThirdActivity extends AppCompatActivity implements View.OnClickList
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.fragment2, fragment); // 将第一个Fragment替换为第二个
+        fragmentTransaction.addToBackStack(null); // 将事务传入返回栈
         fragmentTransaction.commit();
     }
 }
