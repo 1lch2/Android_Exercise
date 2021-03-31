@@ -1,13 +1,15 @@
 package com.example.exercise.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.exercise.R;
 
@@ -38,6 +40,14 @@ public class SecondActivity extends AppCompatActivity {
     public void openThird(View view) {
         Intent intent = new Intent(this, ThirdActivity.class);
         startActivity(intent);
+    }
+
+    public void sendToast(View view) {
+        Context context = getApplicationContext();
+        CharSequence text = "It's a toast!";
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast.makeText(context, text, duration).show();
     }
 
     @Override
